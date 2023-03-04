@@ -16,15 +16,16 @@
         <p>BERTUMBUH</p>
       </div>
       <ul>
-        <li>Beranda</li>
-        <li>Tentang</li>
-        <li>Kami Butuh Kamu</li>
-        <li>Kegiatan Kami</li>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#tentang-kami">Tentang</a></li>
+        <li><a href="#kami-butuh-kamu">Kami Butuh Kamu</a></li>
+        <li><a href="#aktivitas-kami">Kegiatan Kami</a></li>
       </ul>
     </header>
 
     <main>
       <div class="content">
+        <!-- Home Article -->
         <article id="home">
           <div class="home-content">
             <h1>Bersama Lindungi Bumi Kita Untuk Masa Depan</h1>
@@ -37,6 +38,8 @@
           </div>
           <img src="/asset/image/home-img.png" alt="" />
         </article>
+
+        <!-- Data Pohon Tertanam -->
         <article id="pohon-tertanam">
           <img src="/asset/image/pohon-tertanam.png" alt="Total Pohon" />
           <div class="pohon-tertanam-data">
@@ -44,10 +47,143 @@
             <h2>Pohon yang Tertanam</h2>
           </div>
         </article>
+
+        <!-- About Us -->
+        <article id="tentang-kami">
+          <img src="/asset/image/tentang-kami.png" alt="" />
+          <div class="tentang-kami-content">
+            <h2>Tentang Kami</h2>
+            <h1>BERTUMBUH - Save The World</h1>
+            <p>
+              BERTUMBUH - Adalah organisasi non-profit yang mempunyai tujuan
+              untuk Melindungi, menjaga, merawat, dan melestarikan pohon-pohon
+              yang ada di bumi yang kita pijak sekarang
+            </p>
+            <button>Lihat Selengkapnya</button>
+          </div>
+        </article>
+
+        <!-- kami butuh kamu -->
+        <article id="kami-butuh-kamu">
+          <div class="kbk-content">
+            <h2>Kami Butuh Kamu</h2>
+            <h1>Kenapa BERTUMBUH Butuh Kamu ?</h1>
+            <p>
+              15,3 Milyar pohon setiap tahun ditebang di dunia serta hilangnya
+              14,7 hektare lahan hutan hilang di indonesia. Hali ini menyebabkan
+              bumi tidak stabil dan kami mengajak kamu untuk bergabung dan
+              meraih tujuan bersama
+            </p>
+            <button>Gabung Bertumbuh</button>
+          </div>
+          <img src="/asset/image/kami-butuh-kamu.png" alt="" />
+        </article>
+
+        <!-- Aktivitas Kami -->
+        <article id="aktivitas-kami">
+          <h2>Menjadi Bagian Bertumbuh</h2>
+          <h1>Buat Hal Sederhana Jadi Lebih Bermakna</h1>
+          <p>
+            Ciptakan setiap kegiatan jadi lebih bermakna dan bermanfaat untuk
+            kita, dia dan semua
+          </p>
+          <div class="role">
+            <div class="role-card">
+              <div class="card">
+                <p>
+                  Anda dapat membantu dengan berdonasi untuk biaya penanaman,
+                  perwatan, bibit dan biaya oprasional lainnya
+                </p>
+                <!-- <h3>Menjadi Donatur &#8594 </h3> -->
+              </div>
+              <div class="card">
+                <p>
+                  Kamu dapat membantu bertumbuh dengan menjadi relawan kami.
+                  Kamu dapat langsung menanam pohon, membantu berkebun,
+                  melakukan sosialisasi dan program-program menarik lainnya
+                </p>
+                <!-- <h3>Menjadi Relawan &#8594 </h3> -->
+              </div>
+              <div class="card">
+                <p>
+                  Kamu akan belajar tentang cara menanam pohon, merawat pohon
+                  serta hal lain dengan bergabung sebagai petani
+                </p>
+                <!-- <h3>Menjadi Petani &#8594 </h3> -->
+              </div>
+            </div>
+            <div class="nav-card">
+              <!-- <button>&#8592</button>
+              <button>&#8594</button> -->
+            </div>
+          </div>
+        </article>
       </div>
-      <aside></aside>
+
+      <aside>
+        <img src="/asset/image/profile-picture.png" alt="" />
+        <div class="profile-content">
+          <h2>Tentang Saya</h2>
+          <h1>Kadek Ari Dharmika</h1>
+          <p>
+            Mahasiswa Teknik Informatika Institut Teknologi Sepuluh Nopember
+          </p>
+        </div>
+      </aside>
     </main>
 
-    <footer></footer>
+    <footer>
+      <img src="/asset/image/footer-logo.png" alt="" />
+      <div class="footer-content">
+        <div class="info">
+          <table>
+            <tr>
+              <th>Posts</th>
+              <th>Program</th>
+              <th>Alamat</th>
+            </tr>
+            <tr>
+              <td>Berita</td>
+              <td>Jelajah Bersama</td>
+              <td rowspan="3">
+                Jl. Kh. Wahid Hasyim No.76, Cipeujeuh Wetan, Kec. Lemahabang,
+                Kabupaten Cirebon, Jawa Barat, 45183
+              </td>
+            </tr>
+            <tr>
+              <td>Event</td>
+              <td>Tanam Pohon</td>
+            </tr>
+            <tr>
+              <td>Blog</td>
+              <td>Sosialisasi Hutan</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>(0231) 635308</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>surat@smkn1emahabang.sch.id</td>
+            </tr>
+          </table>
+        </div>
+        <p>© 2022 BERTUMBUH | SKENSALA - SMKN 1 LEMAHABANG</p>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
   </body>
 </html>
