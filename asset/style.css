@@ -35,3 +35,40 @@ header li:hover {
     column-gap: 0.5rem;
   }
 }
+
+#home {
+  display: flex;
+  margin: 5rem;
+  padding: 5rem 0 0 5rem;
+  background-color: #eaf6f4;
+}
+
+.home-content {
+  max-width: 50%;
+}
+
+.home-content h1,
+.home-content p,
+.home-content button {
+  margin: 1.5rem;
+}
+
+h1 {
+  font-size: 48px;
+  color: #535353;
+  font-weight: 500;
+}
+
+p {
+  color: #515151;
+  font-size: 20px;
+  font-weight: 400;
+  width: 80%;
+}
+
+button {
+  padding: 0.7rem;
+  border: none;
+  background-color: #2a9d8f;
+  color: white;
+}
