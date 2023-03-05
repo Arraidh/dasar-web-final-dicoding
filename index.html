@@ -15,12 +15,17 @@
         <img src="/asset/image/logo bertumbuh.png" alt="" />
         <p>BERTUMBUH</p>
       </div>
-      <ul>
-        <li><a href="#home">Beranda</a></li>
-        <li><a href="#tentang-kami">Tentang</a></li>
-        <li><a href="#kami-butuh-kamu">Kami Butuh Kamu</a></li>
-        <li><a href="#aktivitas-kami">Kegiatan Kami</a></li>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#home">Beranda</a></li>
+        <li class="nav-item"><a href="#tentang-kami">Tentang</a></li>
+        <li class="nav-item"><a href="#kami-butuh-kamu">Kami Butuh Kamu</a></li>
+        <li class="nav-item"><a href="#aktivitas-kami">Kegiatan Kami</a></li>
       </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </header>
 
     <main>
@@ -94,7 +99,7 @@
                   Anda dapat membantu dengan berdonasi untuk biaya penanaman,
                   perwatan, bibit dan biaya oprasional lainnya
                 </p>
-                <!-- <h3>Menjadi Donatur &#8594 </h3> -->
+                <h3>Menjadi Donatur &#8594 </h3>
               </div>
               <div class="card">
                 <p>
@@ -102,19 +107,19 @@
                   Kamu dapat langsung menanam pohon, membantu berkebun,
                   melakukan sosialisasi dan program-program menarik lainnya
                 </p>
-                <!-- <h3>Menjadi Relawan &#8594 </h3> -->
+                <h3>Menjadi Relawan &#8594 </h3>
               </div>
               <div class="card">
                 <p>
                   Kamu akan belajar tentang cara menanam pohon, merawat pohon
                   serta hal lain dengan bergabung sebagai petani
                 </p>
-                <!-- <h3>Menjadi Petani &#8594 </h3> -->
+                <h3>Menjadi Petani &#8594 </h3>
               </div>
             </div>
             <div class="nav-card">
-              <!-- <button>&#8592</button>
-              <button>&#8594</button> -->
+              <button>&#8592</button>
+              <button>&#8594</button>
             </div>
           </div>
         </article>
@@ -123,10 +128,10 @@
       <aside>
         <img src="/asset/image/profile-picture.png" alt="" />
         <div class="profile-content">
-          <h2>Tentang Saya</h2>
+          <h2>Biodata</h2>
           <h1>Kadek Ari Dharmika</h1>
           <p>
-            Mahasiswa Teknik Informatika Institut Teknologi Sepuluh Nopember
+            Phone: 087866807547 | Email: ari.darmika@gmail.com 
           </p>
         </div>
       </aside>
@@ -174,16 +179,6 @@
       </div>
     </footer>
 
-    <script>
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-
-          document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
-          });
-        });
-      });
-    </script>
+    <script src="/app.js"></script>
   </body>
 </html>

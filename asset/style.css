@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,400&family=Quicksand:wght@500;700&display=swap");
 
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -41,11 +51,19 @@ header li a:hover {
   font-weight: 700;
 }
 
-@media screen and(max-width:1000px) {
-  header ul {
-    flex-wrap: wrap;
-    column-gap: 0.5rem;
-  }
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #2a9d8f;
 }
 
 main {
@@ -238,4 +256,178 @@ table th {
 footer p {
   color: white;
   font-size: 16px;
+}
+
+@media screen and (max-width: 1400px) {
+  #home img {
+    width: 30rem;
+    height: 25rem;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+
+  .info {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #home {
+    padding: 2rem 0 0 2rem;
+  }
+
+  article img {
+    width: 25rem;
+    height: 20rem;
+  }
+  #home img {
+    width: 25em;
+    height: 20em;
+    align-self: flex-end;
+  }
+
+  #pohon-tertanam img {
+    width: 8rem;
+    height: 10rem;
+  }
+
+  .info {
+    font-size: 14px;
+  }
+
+  .card {
+    max-width: 30%;
+  }
+
+  .role {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  article {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #home {
+    padding: 2rem 2rem 0 2rem;
+  }
+
+  .home-content {
+    max-width: 100%;
+  }
+
+  #home img {
+    align-self: center;
+    justify-content: end;
+  }
+
+  #kami-butuh-kamu {
+    flex-direction: column-reverse;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translate(0, 8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translate(0, -8px) rotate(-45deg);
+  }
+
+  header ul {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    color: #2a9d8f;
+  }
+
+  header ul li {
+    margin: 16px 0;
+  }
+
+  header ul.active {
+    left: 0;
+    top: 70px;
+  }
+
+  header {
+    padding: 1rem;
+    justify-content: space-between;
+  }
+
+  #aktivitas-kami h1 {
+    font-size: 36px;
+  }
+
+  aside {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  aside img {
+    width: 20rem;
+  }
+
+  .info {
+    font-size: 10px;
+    flex-direction: column;
+  }
+
+  footer img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  footer {
+    padding: 2rem 2rem;
+  }
+
+  .card:nth-child(2n-1) {
+    display: none;
+  }
+
+  .role-card {
+    justify-content: center;
+  }
+
+  .card {
+    max-width: 50%;
+  }
+
+  .footer-content {
+    width: 70%;
+    align-items: center;
+  }
+
+  table {
+    table-layout: fixed;
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+
+  footer .footer-content p {
+    font-size: 10px;
+    text-align: end;
+  }
 }
